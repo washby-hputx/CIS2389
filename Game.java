@@ -79,7 +79,12 @@ public class Game{
 
    public void declareWinner(){
       //TODO find and declare winner
-      ;
+      ArrayList<Player> tempPlayers = new ArrayList<Player>();
+      for(Player p: players){
+         tempPlayers.add(p);
+      }
+      Collections.sort(tempPlayers, Collections.reverseOrder());
+      System.out.println(tempPlayers);
    }
    
    public Player getCurrentPlayer(){

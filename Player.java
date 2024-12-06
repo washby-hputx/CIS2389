@@ -1,4 +1,4 @@
-public class Player{
+public class Player implements Comparable<Player>{
    private String name;
    private Scorecard scorecard;
    
@@ -17,5 +17,12 @@ public class Player{
    
    public String toString(){
       return name + ": "+ scorecard.getOverallScore();
+   }
+   
+   @Override
+   public int compareTo(Player other){
+      int playerScore = this.getScorecard().getOverallScore();
+      int otherScore = other.getScorecard().getOverallScore();
+      return playerScore - otherScore;
    }
 }

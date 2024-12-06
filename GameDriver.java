@@ -5,8 +5,8 @@ public class GameDriver{
    public static void main(String[] args){
       List<Player> players = new ArrayList<Player>();
       players.add(new Player("Dustin"));
-      // players.add(new Player("Kevion"));
-      // players.add(new Player("Nathan"));
+      players.add(new Player("Kevion"));
+      players.add(new Player("Nathan"));
       Game game = new Game(players);
       game.startGame();
       
@@ -16,5 +16,6 @@ public class GameDriver{
          game.nextTurn();
       }
       
+      game.declareWinner();
    }
 }
