@@ -14,11 +14,11 @@ public class TestDriver{
       
       irfs[0] = new ImproperFraction(10, 20);
       irfs[1] = new ImproperFraction(13, 15);
-      irfs[0] = new ImproperFraction(2, 7);
-      irfs[0] = new ImproperFraction(3, 5);
-      irfs[0] = new ImproperFraction(1, 10);
-      irfs[0] = new ImproperFraction(3, 2);
-      irfs[0] = new ImproperFraction(4, 10);
+      irfs[2] = new ImproperFraction(2, 7);
+      irfs[3] = new ImproperFraction(3, 5);
+      irfs[4] = new ImproperFraction(1, 10);
+      irfs[5] = new ImproperFraction(3, 2);
+      irfs[6] = new ImproperFraction(4, 10);
       
       int i=0;
       while(i<5){
