@@ -30,12 +30,16 @@ public class TestDriver{
          }
       }
       
-      System.out.print("ImproperFraction array = "+irfs+"\nSoring array...");
-      Arrays.sort(irfs);
-      System.out.println("It is now "+irfs);
+      System.out.println(irfs[0]+" is a Fraction?" + (irfs[0] instanceof Fraction));
+      System.out.println(irfs[0]+" is a ProperFraction?" + (irfs[0] instanceof ProperFraction));
+      System.out.println(irfs[0]+" is a ImproperFraction?" + (irfs[0] instanceof ImproperFraction));
       
-      System.out.print("ProperFraction array = "+pfs+"\nSoring array...");
+      System.out.print("ImproperFraction array = "+Arrays.toString(irfs)+"\nSorting array...");
+      Arrays.sort(irfs);
+      System.out.println("It is now "+Arrays.toString(irfs));
+      
+      System.out.print("ProperFraction array = "+Arrays.toString(pfs)+"\nSorting array...");
       Arrays.sort(pfs);
-      System.out.println("It is now "+pfs);
+      System.out.println("It is now "+Arrays.toString(pfs));
    }
 }
