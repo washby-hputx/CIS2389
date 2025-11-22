@@ -25,5 +25,14 @@ public class Canvas{
    public String toString(){
       //TODO create the string so it prints the canvas "framed" with the "=" sign on top and "|" down the sides
       // You can look at the ArtDriver file to see example outputs.
+      String result = "";
+      return result;
    }
+   
+   public void fill(int r, int c, char ch){
+      //TODO: Write a recursive algorithm to fill in the blank spaces with the char given
+      //      beginning at canvas[r][c]. If canvas[r][c] is not blank then the method should
+      //      not change anything.
+   }
+
 }
